@@ -38,10 +38,11 @@ class _RandomWordsState extends State<RandomWords> {
     Navigator.of(context).push(MaterialPageRoute<void>(builder: (context) {
       final tiles = _saved.map((pair) {
         return ListTile(
-            title: Text(
-          pair.asPascalCase,
-          style: _biggerFont,
-        ));
+          title: Text(
+            pair.asPascalCase,
+            style: _biggerFont,
+          ),
+        );
       });
 
       final divided = tiles.isNotEmpty
